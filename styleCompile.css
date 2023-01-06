@@ -30,7 +30,6 @@ header {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .slider:before {
@@ -41,7 +40,6 @@ header {
   left: 4px;
   bottom: 4px;
   background-color: #FF6B00;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -54,8 +52,6 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -135,5 +131,10 @@ footer img {
   align-items: center;
   padding: 0;
 }
+.menu-item {
+  padding: 5px 10px;
+}
 
-/*# sourceMappingURL=styleCompile.css.map */
+.current_menu_item {
+  border-bottom: 5px solid #FF6B00;
+}/*# sourceMappingURL=styleCompile.css.map */
