@@ -1,0 +1,56 @@
+// Couleurs
+
+$colors: (
+  primary:    #FFFFFF,
+  secondary:  #000000,
+  dynamic:    #FF6B00,
+  light-gray: #808080,
+  mid-gray:   #303030,
+  dark-gray:  #1A1A1A,
+
+);
+
+//Typographies
+
+$akshar: ('Akshar', sans-serif);
+$inter: ('Inter', sans-serif);
+
+//Taille d'écriture
+$font-sizes: (
+  "xs": 8px,
+  "s": 10px,
+  "m": 16px,
+  "l": 20px,
+  "xl": 24px,
+  "2xl": 32px,
+  "3xl": 34px,
+  "4xl": 48px,
+);
+
+// Breakpoints 
+$bp: (
+  sm: 640px,
+  md: 960px,
+  lg: 1296px
+);
+
+// Tailles typographiques
+$body: (
+  min: 13px,
+  max: 15px
+);
+
+$heading-1: (
+  min: 36px,
+  max: 64px
+);
+
+$heading-2: (
+  min: 28px,
+  max: 32px
+);
+
+$heading-3: (
+  min: 18px,
+  max: 24px
+);

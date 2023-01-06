@@ -1,0 +1,26 @@
+
+
+// Polices de caractère
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;700&family=Inter:wght@300;400;700&display=swap');
+
+//utils 
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/functions";
+
+
+//base
+
+@import "base/main";
+@import "base/media";
+
+//composants
+@import "components/button";
+
+//Layout
+@import "layout/footer";
+@import "layout/header";
+
+
+//vendors
+@import "vendors/normalize";
