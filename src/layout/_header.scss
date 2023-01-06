@@ -1,10 +1,12 @@
 .header {
-    display: flex;
-  
+  display: flex;
+
 }
+
 .menu {
-    display:flex;
-    margin: 0 140px;
+  display: flex;
+  margin: 0 140px;
+
   & ul {
     display: flex;
     font-family: "Akshar", sans-serif;
@@ -14,6 +16,17 @@
     justify-content: space-around;
     align-items: center;
     padding: 0;
-   
+  }
+
+  // Ajout d'un padding autour des li menu-item afin de positionner le soulignement
+  &-item {
+    padding: 5px 10px;
+  }
+
+
 }
+
+// Ajout du soulignement du lien courant (classe wordpress)
+.current_menu_item {
+  border-bottom: 5px solid map-get($colors , dynamic);
 }
