@@ -1,0 +1,44 @@
+.agenda {
+  font-family: $akshar;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: rem(24);
+  line-height: rem(26);
+
+  a{
+    color: map-get($colors, dynamic);
+    text-decoration: none;
+  }
+
+  &__header {
+    margin: 10px;
+    font-size: rem(32);
+    line-height: rem(24);
+
+  }
+
+  &__concert {
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+
+    &--booked {
+
+    }
+  }
+
+  &__footer{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    &__mail {
+
+    }
+  }
+}
