@@ -30,3 +30,36 @@
   grid-column: 1;
   grid-row: 5;
 }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+    gap: 10px;
+  }
+
+  .galerie_area {
+    flex: 1;
+  }
+
+  .agenda {
+    flex: 1;
+
+  }
+
+  .soundcloud {
+    flex: 1;
+
+  }
+
+  .description_area {
+    flex: 1;
+
+  }
+
+  .youtube {
+    flex: 1;
+
+  }
+}
