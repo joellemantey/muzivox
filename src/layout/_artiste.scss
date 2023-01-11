@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2% 1fr;
-  grid-template-rows: repeat(5, 50px);
+  grid-template-rows: 50px 50px auto 50px 50px;
   margin: 50px 140px;
 }
 
@@ -27,7 +27,6 @@
 .description {
   grid-column: 2/4;
   grid-row: 2/4;
-  background-color: brown;
 }
 
 .youtube {
