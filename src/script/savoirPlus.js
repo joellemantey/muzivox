@@ -6,12 +6,12 @@ expandCollapseButton.addEventListener("click", function() {
     if(isExpanded){
         container.style.maxHeight = "240px";
         container.style.transition = "max-height 0.5s ease-out";
-        expandCollapseButton.innerText = "En savoir moins";
+        expandCollapseButton.innerText = "En savoir plus";
     }
     else{
         container.style.maxHeight = "1000px";
         container.style.transition = "max-height 0.5s ease-in";
-        expandCollapseButton.innerText = "En savoir plus";
+        expandCollapseButton.innerText = "En savoir moins";
     }
     isExpanded = !isExpanded;
 });
