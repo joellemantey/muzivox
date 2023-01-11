@@ -6,11 +6,12 @@
   display: inline-block;
   width: 60px;
   height: 34px;
-    &input{
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+
+  &input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 // /* Hide default HTML checkbox */
@@ -31,29 +32,30 @@
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
-    &:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: map-get($colors, dynamic);
-     -webkit-transition: .4s;
-     transition: .4s;
+
+  &:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: map-get($colors, dynamic);
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-} 
+}
 
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: map-get($colors, dark-gray);
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px map-get($colors, dark-gray);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -66,4 +68,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+// BOUTON COMPLET
+
+.btn-full {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+  padding: 8px 35px;
+  gap: 10px;
+  height: 30px;
+
+  background: rgba(255, 13, 13, 0.85);
+  border-radius: 8px;
+  color: map-get($colors, primary);
 }
