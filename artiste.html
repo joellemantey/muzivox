@@ -18,7 +18,7 @@
         <ul>
           <li class="menu-item">Contact</li>
           <li class="menu-item"><a href="artiste.html">Artistes</a></li>
-          <img src="asset/image/Logo_muzivox.jpg" alt="logo muzivox">
+          <a href="index.html"><img src="asset/image/Logo_muzivox.jpg" alt="logo muzivox"></a>
           <li class="menu-item">Agenda</li>
           <li class="menu-item"><a href="espace-pro.html">Espace Pro</a></li>
         </ul>
@@ -34,7 +34,30 @@
 
   <main>
     <div class="wrapper">
-      <div class="galerie"> galerie </div>
+      <div class="galerie_area">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="asset/photo/LauraCox/lauraCox1.jpg" />
+          </div>
+          <div class="carousel-slide">
+            <img src="asset/photo/LauraCox/lauraCox2.jpg" />
+          </div>
+          <div class="carousel-slide">
+            <img src="asset/photo/LauraCox/lauraCox3.jpg" />
+          </div>
+        </div>
+        <div class="galerie_area-nav">
+
+          <button class="btn__arrow" onclick="prevSlide()">
+              <div class="btn__arrow--left"> </div>
+          </button>
+          <button class="btn__arrow" onclick="nextSlide()">
+              <div class="btn__arrow--right"> </div>
+          </button>
+        </div>
+      </div>
+
+
       <div class="agenda">
         <div class="agenda__header">
           <strong>Concert</strong> à venir
@@ -146,8 +169,8 @@
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </div>
   </footer>
-
-<script src="src/script/savoirPlus.js"></script>
+  <script src="src/script/galerieArtiste.js"></script>
+  <script src="src/script/savoirPlus.js"></script>
 </body>
 
 </html>
