@@ -24,6 +24,8 @@
 
   &__text {
     margin: 0px 50px;
+    overflow: hidden;
+    max-height: 240px;
 
   }
 
@@ -43,6 +45,8 @@
     }
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
+
+  
 }
