@@ -100,6 +100,8 @@ input:checked + .slider:before {
 }
 .description__text {
   margin: 0px 50px;
+  overflow: hidden;
+  max-height: 240px;
 }
 .description p {
   margin: 20px 0;
@@ -111,7 +113,7 @@ input:checked + .slider:before {
 .description__savoirPlus {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .description__savoirPlus a {
   text-decoration: none;
