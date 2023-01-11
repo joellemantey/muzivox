@@ -16,11 +16,14 @@
 
 //composants
 @import "components/button";
+@import "components/descriptionArtsite";
+@import "components/agendaArtiste";
+@import "components/galerieArtiste";
 
 //Layout
 @import "layout/footer";
 @import "layout/header";
-
+@import "layout/artiste";
 
 //vendors
 @import "vendors/normalize";
