@@ -183,7 +183,7 @@ footer img {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2% 1fr;
-  grid-template-rows: 50px 50px auto 50px auto;
+  grid-template-rows: 50px 50px auto 0 auto;
   margin: 50px 140px;
 }
 
@@ -214,5 +214,4 @@ footer img {
 .youtube {
   grid-column: 1;
   grid-row: 5;
-  background-color: darkblue;
 }/*# sourceMappingURL=styleCompile.css.map */
