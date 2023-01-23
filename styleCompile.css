@@ -30,6 +30,7 @@ header {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 .slider:before {
@@ -40,6 +41,7 @@ header {
   left: 4px;
   bottom: 4px;
   background-color: #FF6B00;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -52,6 +54,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -192,8 +196,7 @@ input:checked + .slider:before {
 .galerie img.active {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 
@@ -220,8 +223,7 @@ input:checked + .slider:before {
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .galerie_area {
@@ -231,6 +233,77 @@ input:checked + .slider:before {
   position: absolute;
   bottom: 10px;
   left: 10px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 140px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 100px;
+}
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 60%;
+  background-color: black;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(asset/image/etoile_grise.png);
+  fill: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px 20px;
+  position: absolute;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.formGroup label {
+  text-align: end;
+  color: white;
+  width: 20%;
+  margin-left: 10%;
+}
+.formGroup input {
+  width: 50%;
+  border-radius: 10px;
+  height: 34px;
+  margin-right: 110px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-container .btn {
+  text-transform: uppercase;
+  width: 10%;
+  border-radius: 8px;
+  background-color: #FF6B00;
+  height: 36px;
+  margin-right: 110px;
+}
+
+.egaliseurLeft {
+  margin-right: 44%;
 }
 
 footer {
@@ -348,19 +421,26 @@ footer img {
     margin: 50px 20px;
     gap: 10px;
   }
+
   .galerie_area {
     flex: 1;
   }
+
   .agenda {
     flex: 1;
   }
+
   .soundcloud {
     flex: 1;
   }
+
   .description_area {
     flex: 1;
   }
+
   .youtube {
     flex: 1;
   }
-}/*# sourceMappingURL=styleCompile.css.map */
+}
+
+/*# sourceMappingURL=styleCompile.css.map */
