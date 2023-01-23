@@ -239,7 +239,7 @@ h3 {
   color: white;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 140px;
+  margin-bottom: 10%;
 }
 
 .container {
@@ -286,7 +286,7 @@ form {
   width: 50%;
   border-radius: 10px;
   height: 34px;
-  margin-right: 110px;
+  margin-right: 12.5%;
 }
 
 .btn-container {
@@ -295,17 +295,42 @@ form {
 }
 .btn-container .btn {
   text-transform: uppercase;
-  width: 10%;
   border-radius: 8px;
   background-color: #FF6B00;
   height: 36px;
-  margin-right: 110px;
+  margin-right: 12.5%;
 }
 
 .egaliseurLeft {
   margin-right: 44%;
 }
 
+@media screen and (max-width: 640px) {
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  .formGroup {
+    display: contents;
+  }
+  .formGroup label {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .formGroup input {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .btn-container {
+    display: contents;
+  }
+  .btn-container .btn {
+    margin-right: 0;
+    width: 60px;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
