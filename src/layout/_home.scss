@@ -1,0 +1,53 @@
+/* Carrousel */
+// * { box-sizing: border-box; }
+
+// body { font-family: sans-serif; }
+
+.title_home{
+  color: black;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+
+
+.container_aPropos{
+  background-color: black;
+  width: 50%;
+  margin-bottom: 80px;
+  & .title_aPropos{
+    color: white;
+    text-align: start;
+  }
+  & p{
+    color: white;
+    margin-bottom: 50px;
+  }
+}
+
+.container_carousel{
+  background-color: black;
+  height: 240px;
+  margin: 100px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.carousel {
+
+  background: #EEE;
+  margin: 0 50px;
+}
+
+.carousel-cell {
+  width: 40%;
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-size: cover;
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  
+}
