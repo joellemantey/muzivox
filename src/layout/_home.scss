@@ -11,21 +11,19 @@
 
 
 
-.container_aPropos{  
+.container_aPropos{
   background-color: black;
   width: 50%;
   margin-bottom: 80px;
-  height: 24sas0px;
-    & .title_aPropos{
-      color: white;
-      text-align: start;
-    }
-    & p{
-      color: white;
-      margin-bottom: 50px;
-    }
+  & .title_aPropos{
+    color: white;
+    text-align: start;
   }
-  
+  & p{
+    color: white;
+    margin-bottom: 50px;
+  }
+}
 
 .container_carousel{
   background-color: black;
