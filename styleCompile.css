@@ -247,11 +247,22 @@ h3 {
   margin-right: auto;
   width: 80%;
   margin-bottom: 100px;
+  position: relative;
 }
 .container-flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container ::before {
+  content: "";
+  position: absolute;
+  /*or absolute*/
+  background-image: url("asset/image/egaliseur.svg");
+  margin-left: -2px;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 80%;
 }
 
 form {
@@ -261,12 +272,12 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(asset/image/etoile_grise.png);
+  background-image: url(asset/image/ETOILE_BIG.png);
   fill: red;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px 20px;
-  position: absolute;
+  margin-bottom: 80px;
 }
 
 .formGroup {
@@ -299,10 +310,6 @@ form {
   background-color: #FF6B00;
   height: 36px;
   margin-right: 12.5%;
-}
-
-.egaliseurLeft {
-  margin-right: 44%;
 }
 
 @media screen and (max-width: 640px) {
