@@ -247,22 +247,11 @@ h3 {
   margin-right: auto;
   width: 80%;
   margin-bottom: 100px;
-  position: relative;
 }
 .container-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container ::before {
-  content: "";
-  position: absolute;
-  /*or absolute*/
-  background-image: url("asset/image/egaliseur.svg");
-  margin-left: -2px;
-  background-repeat: no-repeat;
-  width: 80%;
-  height: 80%;
 }
 
 form {
@@ -278,6 +267,31 @@ form {
   background-position: center;
   padding: 10px 20px;
   margin-bottom: 80px;
+  position: relative;
+}
+form::before {
+  content: "";
+  position: absolute;
+  /*or absolute*/
+  background-image: url("asset/image/egaliseur.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: -16px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+form::after {
+  content: "";
+  position: absolute;
+  /*or absolute*/
+  background-image: url("asset/image/egaliseur.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  right: -4px;
+  transform: translateX(50%);
+  width: 100%;
+  height: 100%;
 }
 
 .formGroup {
@@ -314,8 +328,24 @@ form {
 
 @media screen and (max-width: 640px) {
   form {
-    display: flex;
     align-items: center;
+    width: 100%;
+  }
+  form::before {
+    transform: rotateZ(90deg) translateX(-50%);
+    background-size: 50%;
+    left: inherit;
+    top: 38px;
+    width: 390px;
+    height: 300px;
+  }
+  form::after {
+    transform: rotateZ(90deg) translateX(-50%);
+    background-size: 50%;
+    left: inherit;
+    bottom: -346px;
+    width: 390px;
+    height: 300px;
   }
 
   .formGroup {
@@ -328,6 +358,9 @@ form {
   .formGroup input {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .formGroup label {
+    text-align: center;
   }
 
   .btn-container {
