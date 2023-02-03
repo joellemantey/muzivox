@@ -21,7 +21,7 @@ h3 {
   
 }
 
-form {
+.container-rectangle{
   width: 60%;
   background-color: black;
   height: 450px;
@@ -35,6 +35,7 @@ form {
   padding: 10px 20px;
   margin-bottom: 80px;
   position: relative;
+  justify-content: flex-start;
   
   &::before {
     content: '';
@@ -102,7 +103,7 @@ form {
 
 
 @media screen and (max-width: 640px) {
-  form{
+  .container-rectangle{
 
     align-items: center;
     width: 100%;

@@ -126,12 +126,18 @@ input:checked+.slider:before {
 
 // BOUTONS AGENDA
 
-.btns-filter {
+.btns-filters {
   display:flex;
   justify-content:flex-end;
   align-items:flex-start;
 }
 .btn-filter {
   color:white;
+  text-transform:uppercase;
+  padding:5px 15px;
+  margin: 5px;
+  font-family:"Akshar";
+  font-size:22px;
+  border:none;
   background-color:map-get($colors, dynamic);
 }

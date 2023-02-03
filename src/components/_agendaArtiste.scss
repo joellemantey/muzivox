@@ -5,7 +5,7 @@
   text-transform: uppercase;
   font-size: rem(24);
   line-height: rem(26);
-
+ 
   a{
     color: map-get($colors, dynamic);
     text-decoration: none;
@@ -41,4 +41,26 @@
 
     }
   }
+}
+
+// PAGE AGENDA
+
+.content-filter {
+  text-transform:inherit;
+}
+.division-orange {
+  background-color: map-get($colors, dynamic);
+  height:1px;
+  border:none;
+}
+
+.title-filter {
+  display:flex;
+}
+#name-filter {
+  font-size:25px;
+  justify-content:flex-start;
+}
+#concert-filter {
+  color: white;
 }
