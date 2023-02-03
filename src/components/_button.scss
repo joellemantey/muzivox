@@ -123,3 +123,15 @@ input:checked+.slider:before {
     z-index: 10;
   }
 }
+
+// BOUTONS AGENDA
+
+.btns-filter {
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+}
+.btn-filter {
+  color:white;
+  background-color:map-get($colors, dynamic);
+}
