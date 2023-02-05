@@ -1,0 +1,59 @@
+.contact{
+  height: 100%;
+}
+
+#listes-selectionnee{
+  color: map-get($colors, dynamic);
+  border: 1px solid map-get($colors, dynamic);
+  width: 51%;
+  border-radius: 10px;
+  height: 34px;
+  margin-right: 12.5%;
+  display: flex;
+  align-self: flex-end;
+  border: 2px;
+  padding: 2px;
+}
+
+.note{
+  width: 50%;
+  border-radius: 10px;
+  height: 120px;
+  margin-right: 12.5%;
+  // display: flex;
+  align-self: flex-end;
+  // color: white;
+}
+
+label{
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+  h3{
+    font-size: map-get($font-sizes, 'xl' );
+  }
+
+  .formGroup label{
+    font-size: map-get($font-sizes, 'm' );
+    width: 100%;
+  }
+  #listes-selectionnee{
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .note{
+    height: 100%;
+    align-self: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+ .formGroup textarea{
+    height: 100px;
+    width: 80%;
+  }
+}
