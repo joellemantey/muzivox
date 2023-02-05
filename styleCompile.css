@@ -261,7 +261,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(asset/image/ETOILE_BIG.png);
+  background-image: url(asset/image/etoile_grise.png);
   fill: red;
   background-repeat: no-repeat;
   background-position: center;
@@ -472,11 +472,13 @@ footer img {
   color: black;
   margin-bottom: 0;
   text-align: start;
+  margin: 0 0 100px 90px;
 }
 
 .container_aPropos {
   background-color: black;
-  width: 50%;
+  width: 70%;
+  height: 240px;
   margin-bottom: 80px;
 }
 .container_aPropos .title_aPropos {
@@ -485,32 +487,180 @@ footer img {
 }
 .container_aPropos p {
   color: white;
-  margin-bottom: 50px;
+  padding: 0 40px;
+}
+.container_aPropos h3 {
+  padding: 40px;
+  margin: 0;
 }
 
 .container_carousel {
   background-color: black;
-  height: 240px;
-  margin: 100px 0;
+  height: 150px;
+  margin-bottom: 130px;
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
 
 .carousel {
-  background: #EEE;
   margin: 0 50px;
 }
 
 .carousel-cell {
-  width: 40%;
-  height: 400px;
+  width: 28%;
+  height: 300px;
+  margin-left: 70px;
   margin-right: 10px;
   border-radius: 5px;
   background-size: cover;
   display: flex;
   align-items: self-end;
   justify-content: center;
+}
+
+.flickity-viewport {
+  display: flex;
+}
+
+.btn-artiste {
+  height: 100px;
+  text-align: end;
+}
+.btn-artiste button {
+  height: 45%;
+  width: 20%;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: start;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .title_aPropos {
+    font-size: 16px;
+  }
+
+  .container_aPropos {
+    height: 140px;
+    margin-bottom: 40px;
+  }
+  .container_aPropos h3 {
+    padding: 20px;
+  }
+  .container_aPropos p {
+    font-size: 8px;
+    padding: 0 20px;
+  }
+
+  .title_home {
+    font-size: 16px;
+    margin: 0 0 40px 20px;
+  }
+
+  .carousel-cell {
+    width: 100%;
+    object-fit: cover;
+    margin: 0 10px 0 30px;
+  }
+
+  /* Carrousel */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Akshar", sans-serif;
+  }
+
+  .carousel {
+    margin: 20px;
+  }
+
+  .container_carousel {
+    height: 50px;
+    margin-bottom: 80px;
+  }
+
+  .carousel-cell {
+    width: 40%;
+    height: 100px;
+    border-radius: 5px;
+    background-size: cover;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -10px;
+  }
+
+  .flickity-prev-next-button.next {
+    right: -10px;
+  }
+
+  .flickity-prev-next-button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .carousel-cell:before {
+    display: block;
+  }
+
+  .flickity-viewport {
+    height: 100px;
+  }
+
+  .btn-artiste button {
+    font-size: 10px;
+    height: 30%;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1223px) {
+  .title_aPropos {
+    font-size: 24px;
+  }
+
+  .container_aPropos {
+    height: 190px;
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  .container_aPropos h3 {
+    padding: 20px;
+  }
+  .container_aPropos p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .container_carousel {
+    height: 100px;
+    margin-bottom: 130px;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-cell {
+    width: 60%;
+    object-fit: cover;
+    margin: 0 10px 0 30px;
+  }
+
+  .flickity-viewport {
+    height: 200px;
+    width: 100%;
+  }
+
+  .btn-artiste button {
+    height: 45%;
+    width: 35%;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=styleCompile.css.map */
