@@ -3,17 +3,19 @@
 
 // body { font-family: sans-serif; }
 
+
 .title_home{
   color: black;
   margin-bottom: 0;
   text-align: start;
+  margin: 0 0 100px 90px;
 }
-
 
 
 .container_aPropos{
   background-color: black;
-  width: 50%;
+  width: 70%;
+  height: 240px;
   margin-bottom: 80px;
   & .title_aPropos{
     color: white;
@@ -21,33 +23,184 @@
   }
   & p{
     color: white;
-    margin-bottom: 50px;
+    padding: 0 40px;
   }
-}
-
-.container_carousel{
-  background-color: black;
-  height: 240px;
-  margin: 100px 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
-.carousel {
-
-  background: #EEE;
-  margin: 0 50px;
-}
-
-.carousel-cell {
-  width: 40%;
-  height: 400px;
-  margin-right: 10px;
-  border-radius: 5px;
-  background-size: cover;
-  display: flex;
-  align-items: self-end;
-  justify-content: center;
   
-}
+  & h3{
+    padding: 40px;
+    margin: 0;
+  }
+  // &::after{
+    //   content: '';
+    //   width: 100px;
+    //   background-image: url(asset/image/etoile_complete.svg);
+    // }
+  }
+  
+  .container_carousel{
+    background-color: black;
+    height: 150px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  
+  .carousel {
+    margin: 0 50px;
+  }
+  
+  .carousel-cell {
+    width: 28%;
+    height: 300px;
+    margin-left: 70px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-size: cover;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+    
+  }
+  
+  .flickity-viewport{
+    display: flex;
+  }
+  
+  .btn-artiste{
+    height: 100px;
+    text-align: end;
+    & button{
+      height: 45%;
+      width: 20%;
+      border: none;
+      font-weight: bolder;
+      font-size: map-get($font-sizes, "l");
+      text-align: start;
+      padding: 0 20px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .title_aPropos{
+      font-size: map-get($font-sizes, "m");
+    }
+    .container_aPropos {
+      height: 140px;
+      margin-bottom: 40px;
+      & h3{
+        padding: 20px;
+      }
+      & p{
+        font-size: map-get($font-sizes, "xs");
+        padding: 0 20px;
+      }
+    }
+    .title_home{
+      font-size: map-get($font-sizes, "m");
+      margin: 0 0 40px 20px;
+    }
+    
+    .carousel-cell{
+      width:100%;
+      object-fit:cover;
+      margin : 0 10px 0 30px;
+    }
+    
+    /* Carrousel */
+    * { box-sizing: border-box; }
+    
+    body { font-family: $akshar; }
+    
+    .carousel {
+      margin:20px;
+    }
+    
+    .container_carousel{
+      height: 50px;
+      margin-bottom: 80px;
+    }
+    
+    .carousel-cell {
+      width: 40%;
+      height: 100px;
+      // margin: 0 10px 35px;
+      border-radius: 5px;
+      background-size: cover;
+    }
+    
+    .flickity-prev-next-button.previous{
+      left: -10px;
+    }
+    
+    .flickity-prev-next-button.next{
+      right: -10px;
+    }
+    
+    .flickity-prev-next-button{
+      width: 22px;
+      height: 22px;
+    }
+    
+    .carousel-cell:before {
+      display: block;
+      
+    }
+    .flickity-viewport{
+      height: 100px;
+    }
+
+    .btn-artiste button{
+      font-size: map-get($font-sizes, "s");
+      height: 30%;
+      width: 30%;
+    }
+    
+    
+    
+  }
+  @media screen and (min-width : 640px) and (max-width : 1223px){
+    .title_aPropos{
+      font-size: map-get($font-sizes, "xl");
+    }
+    .container_aPropos {
+      height: 190px;
+      padding: 30px 0;
+      margin-bottom: 40px;
+      & h3{
+        padding: 20px;
+      }
+      & p{
+        font-size: map-get($font-sizes, "m");
+        padding: 0 20px;
+      }
+    }
+
+    .container_carousel{
+      height: 100px;
+      margin-bottom: 130px;
+    }
+
+    .carousel{
+      display: flex;
+      justify-content: center;
+    }
+
+    .carousel-cell{
+      width: 60%;
+      object-fit:cover;
+      margin : 0 10px 0 30px ;
+    }
+
+    .flickity-viewport{
+      height: 200px;
+      width: 100%;
+    }
+
+    .btn-artiste button{
+      height: 45%;
+      width: 35%;
+      font-size: map-get($font-sizes, "m");
+    }
+    
+  }
