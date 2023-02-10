@@ -263,7 +263,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(asset/image/etoile_grise.png);
+  background-image: url(asset/image/ETOILE_BIG.png);
   fill: red;
   background-repeat: no-repeat;
   background-position: center;
@@ -488,15 +488,15 @@ footer img {
   margin-right: 20px;
 }
 
-.header {
+#menu {
   display: flex;
 }
 
-.menu {
+.nav {
   display: flex;
   margin: 0 140px;
 }
-.menu ul {
+.nav ul {
   display: flex;
   font-family: "Akshar", sans-serif;
   font-size: 20px;
@@ -506,14 +506,136 @@ footer img {
   align-items: center;
   padding: 0;
 }
-.menu-item {
+.nav-item {
   padding: 5px 10px;
+}
+
+#accueil {
+  display: none;
 }
 
 .current_menu_item {
   border-bottom: 5px solid #FF6B00;
 }
 
+@media screen and (max-width: 640px) {
+  #menu {
+    display: inline-block;
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    gap: 15%;
+  }
+
+  .header img {
+    height: 30px;
+    margin: 20px 30px 0;
+  }
+
+  #accueil {
+    display: block;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #FF6B00;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    margin: 0;
+  }
+
+  .nav ul {
+    display: block;
+  }
+
+  .nav li {
+    list-style: none;
+    color: white;
+    padding: 6px 20px;
+  }
+
+  .nav li img {
+    display: none;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #FF6B00, #FF6B00);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+  }
+
+  .header .change-accueil {
+    margin: 20px 0 0 110px;
+  }
+}
 .wrapper {
   display: grid;
   grid-template-columns: 0.6fr 2% 1fr;

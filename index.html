@@ -12,66 +12,78 @@
 <body>
   <header>
     <!-- debut du menu -->
-    <div class="header">
-      <nav class="menu">
+    <div id="menu">
+      <div class="header">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <img src="asset/image/Logo_muzivox.jpg" alt="logo muzivox" id="accueil">
+    </div>
+    
+
+      <nav class="nav" id="nav">
         <ul>
           <li class="menu-item"><a href="contact.html">Contact</a></li>
           <li class="menu-item"><a href="artiste.html">Artistes</a></li>
-          <li><img src="asset/image/Logo_muzivox.jpg" alt="logo muzivox"><a href="index.html"></a></li>
-          <li class="menu-item">Agenda</li>
+          <li class="menu-item"><a href="index.html" class="accueil"></a><img src="asset/image/Logo_muzivox.jpg" alt="logo muzivox">Accueil</li>
+          <li class="menu-item"><a href="#">Agenda</a></li>
           <li class="menu-item"><a href="espace-pro.html">Espace Pro</a></li>
         </ul>
         <!-- fin du menu -->
         
       </nav>
-    </header>
-    <main>
-      
-      <div class="container_aPropos">
-        <h3 class="title_aPropos">A PROPOS DE MUZIVOX</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>    
-      <div class="slider_home">
-        <h3 class="title_home">NOS ARTISTES</h3>
-        <div class="container_carousel">
-          <div class="carousel" data-flickity='{ "wrapAround": true }'>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox1.jpg)"></div>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox2.jpg)"></div>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox3.jpg)"></div>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox1.jpg)"></div>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox2.jpg)"></div>
-            <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox3.jpg)"></div>
-          </div>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+  </header>
+  <main>
+    
+    <div class="container_aPropos">
+      <h3 class="title_aPropos">A PROPOS DE MUZIVOX</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>    
+    <div class="slider_home">
+      <h3 class="title_home">NOS ARTISTES</h3>
+      <div class="container_carousel">
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox1.jpg)"></div>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox2.jpg)"></div>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox3.jpg)"></div>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox1.jpg)"></div>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox2.jpg)"></div>
+          <div class="carousel-cell" style="background-image:url(asset/photo/lauraCox/lauraCox3.jpg)"></div>
         </div>
-        <div class="btn-artiste">
+      </div>
+      <div class="btn-artiste">
         <button>Voir tous nos artistes</button>
       </div>
-      </div>
-    </main>
-    <footer>
-      <nav class="nav_start">
-        <ul>
-          <li><a href="#">Conditions Générales de ventes</a></li>
-          <li><a href="#">Mentions Legales</a></li>
-          <li>© Copyright tous droits reserves a Muzivox </li>
-        </ul>
-      </nav>
-      <img src="asset/image/etoile_grise.png">
-      <nav class="nav_end">
-        <ul>
-          <li><a href="#">Politique de confidentialite</a></li>
-          <li><a href="#">Conditions generales d’utilisation</a></li>
-          <li><a href="#">Plan du site</a></li>
-        </ul>
-      </nav>
-      <div class="media">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </div>
-      
-      
-      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    </footer>
+    </div>
+  </main>
+  <footer>
+    <nav class="nav_start">
+      <ul>
+        <li><a href="#">Conditions Générales de ventes</a></li>
+        <li><a href="#">Mentions Legales</a></li>
+        <li>© Copyright tous droits reserves a Muzivox </li>
+      </ul>
+    </nav>
+    <img src="asset/image/etoile_grise.png">
+    <nav class="nav_end">
+      <ul>
+        <li><a href="#">Politique de confidentialite</a></li>
+        <li><a href="#">Conditions generales d’utilisation</a></li>
+        <li><a href="#">Plan du site</a></li>
+      </ul>
+    </nav>
+    <div class="media">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
     
-  </body>
-  </html>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </footer>
+  <script src="src/script/hearderResponsive.js"></script>
+</body>
+</html>

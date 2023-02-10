@@ -1,9 +1,9 @@
-.header {
+#menu {
   display: flex;
 
 }
 
-.menu {
+.nav {
   display: flex;
   margin: 0 140px;
 
@@ -26,7 +26,149 @@
 
 }
 
+#accueil{
+  display: none;
+}
+
 // Ajout du soulignement du lien courant (classe wordpress)
 .current_menu_item {
   border-bottom: 5px solid map-get($colors , dynamic);
+}
+
+
+@media screen and (max-width: 640px) {
+
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   background-color: #6C7A86 ;
+// }
+
+#menu {
+  display: inline-block;
+  z-index: 2;
+
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  gap: 15%;
+  // justify-content: space-between;
+  
+}
+
+.header img{
+  height: 30px;
+  margin: 20px 30px 0;
+}
+
+#accueil{
+  display: block;
+
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color:map-get($colors , dynamic);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  margin: 0;
+}
+
+.nav ul {
+  display: block;
+  // padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  color: white;
+  padding: 6px 20px;
+}
+
+.nav li img{
+  display: none;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+// .nav li a:hover {
+//   font-weight: bold;
+// }
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, map-get($colors , dynamic),map-get($colors , dynamic));
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+.header .change-accueil{
+  margin: 20px 0 0 110px;
+}
+
+
+
 }
